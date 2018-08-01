@@ -65,7 +65,7 @@ audio#c_note
   z-index:1;
   opacity: 0.01;
 }
-audio#d_note 
+audio#b_note 
 {
   position: fixed;
   top: 281px;
@@ -106,44 +106,63 @@ audio#min2
   z-index:1;
 }     
 </style>
+<script>
+
+document.addEventListener('keydown', function(e) {
+  if (e.keyCode == 81) {
+    document.getElementById('c_note').play();
+  }
+  if (e.keyCode == 87) {
+    document.getElementById('b_note').play();
+  }
+  if (e.keyCode == 69) {
+    document.getElementById('e_note').play();
+  }
+  if (e.keyCode == 82) {
+    document.getElementById('f_note').play();
+  }
+  if (e.keyCode == 84) {
+    document.getElementById('min1').play();
+  }
+  if (e.keyCode == 89) {
+    document.getElementById('min2').play();
+  }
+});
+
+</script>
 </head>
 <body>
 
 <div class="parent">
+
 <img class="img1" src="./tune_files/C.png">
-<audio controls  id="c_note">
+<audio controls   id="c_note" ;>
     <source src="c.wav" type="audio/wav">
 </audio>
 </div>
 
 
 <img class="img2" src="./tune_files/minor.png">
-<img class="img3" src="./tune_files/D.png">
+<img class="img3" src="./tune_files/B.png">
 <img class="img4" src="./tune_files/minor.png">
 <img class="img5" src="./tune_files/F.png">
 <img class="img6" src="./tune_files/E.png">
-<audio controls  id="d_note">
-    <source src="d.wav" type="audio/wav">
+<audio controls  id="b_note";>
+    <source src="b.wav" type="audio/wav" onkeydown=myFunction();>
 </audio>
-<audio controls  id="e_note">
+<audio controls  id="e_note" ;>
     <source src="e.wav" type="audio/wav">
 </audio>
-<audio controls id="f_note">
+<audio controls id="f_note" ;>
     <source src="f.wav" type="audio/wav">
 </audio>
-<audio controls id="min1">
+<audio controls id="min1" ;>
     <source src="min1.wav" type="audio/wav">
 </audio>
-<audio controls id="min2">
+<audio controls id="min2" ;>
     <source src="min2.wav" type="audio/wav">
 </audio>
 
 </div>
-
-
-
-
-
-
-
-</body></html>
+</body>
+</html>
