@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.img1 
+{
+  border: 1px solid #f00;
+  position: absolute;
+  z-index: 1;
+  overflow: hidden;
+  height: auto;
+  max-width: 100%;
+  float: left;
+}
+.img2 
+{
+  position:relative;
+  z-index:1;
+  top: -148px;
+  left: -239px;
+  overflow: hidden;
+  height: auto;
+  max-width: 100%;
+}
+.img3
+{
+  position:relative;
+  z-index:0;
+  top:-2px;
+  left:-263px;
+  overflow: hidden;
+  height: auto;
+  max-width: 100%;
+}
+.img4 
+{
+  position:relative;
+  z-index:1;
+  top: -149px;
+  left: -207px;
+  max-width: 100%;
+}
+.img5 
+{
+  position:relative;
+  z-index:0;
+  max-width: 100%;
+  left:-311px;
+  top:-2px;
+}
+.img6
+{
+  position:relative;
+  z-index:0;
+  top: -2px;
+  left:-316px;
+  max-width: 100%;
+}
+audio#c_note 
+{
+  position: relative;
+  top: 273px;
+  left: 17px;
+  float: left;
+  z-index:1;
+  opacity: 0.01;
+}
+audio#d_note 
+{
+  position: fixed;
+  top: 281px;
+  left: 105px;
+  z-index:1;
+  opacity: 0.01;
+}
+audio#e_note 
+{
+  position: fixed;
+  top: 281px;
+  left: 184px;
+  opacity: 0.01;
+  z-index:1;
+}
+audio#f_note 
+{
+  position: fixed;
+  top: 281px;
+  left: 265px;
+  opacity: 0.01;
+  z-index:1;
+} 
+audio#min1 
+{
+  position: fixed;
+  top: 159px;
+  left: 62px;
+  opacity: 0.01;
+  z-index:1;
+}   
+audio#min2
+{
+  position: fixed;
+  top: 159px;
+  left: 224px;
+  opacity: 0.01;
+  z-index:1;
+}     
+</style>
+</head>
+<body>
+
+<div class="parent">
+<img class="img1" src="./tune_files/C.png">
+<audio controls  id="c_note">
+    <source src="c.wav" type="audio/wav">
+</audio>
+</div>
+
+
+<img class="img2" src="./tune_files/minor.png">
+<img class="img3" src="./tune_files/D.png">
+<img class="img4" src="./tune_files/minor.png">
+<img class="img5" src="./tune_files/F.png">
+<img class="img6" src="./tune_files/E.png">
+<audio controls  id="d_note">
+    <source src="d.wav" type="audio/wav">
+</audio>
+<audio controls  id="e_note">
+    <source src="e.wav" type="audio/wav">
+</audio>
+<audio controls id="f_note">
+    <source src="f.wav" type="audio/wav">
+</audio>
+<audio controls id="min1">
+    <source src="min1.wav" type="audio/wav">
+</audio>
+<audio controls id="min2">
+    <source src="min2.wav" type="audio/wav">
+</audio>
+
+</div>
+
+
+
+
+
+
+
+</body></html>
